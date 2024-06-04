@@ -27,6 +27,25 @@ const ImageTag = () => {
   );
 };
 
+const ProfileDetails = () => {
+  const details = {
+    name: "John Doe",
+    age: 25,
+    email: "john@gmail.com",
+    bio: "A passionate software developer.",
+  };
+
+  return (
+    <>
+      <h2>Profile Details</h2>
+      <p>Name: {details.name}</p>
+      <p>Age: {details.age}</p>
+      <p>Email: {details.email}</p>
+      <p>Bio: {details.bio}</p>
+    </>
+  );
+};
+
 const App = () => {
   return (
     <div>
@@ -34,6 +53,7 @@ const App = () => {
       <Greetings />
       <LinkTag />
       <ImageTag />
+      <ProfileDetails />
     </div>
   );
 };

@@ -71,7 +71,7 @@ const CapitalizeString = () => {
 
 const CircleArea = () => {
   const radius = 8;
-  const area = Math.PI * radius ** 2;
+  const area = Math.PI * radius * radius;
   return (
     <div>
       <h1>Area of Circle</h1>

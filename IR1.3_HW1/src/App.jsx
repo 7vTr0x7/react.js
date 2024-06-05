@@ -1,44 +1,11 @@
-const Greeting = (props) => {
-  return <h1>Hello, {props.name}</h1>;
-};
-
-const UserDetails = (props) => {
-  return (
-    <div>
-      <h1>User Details</h1>
-      <p>Name: {props.name}</p>
-      <p>Age: {props.age}</p>
-      <p>Country: {props.country}</p>
-    </div>
-  );
-};
-
-const WeatherInfo = (props) => {
-  return (
-    <div>
-      <h1>Weather Info</h1>
-      <p>Temperature: {props.temperature} degree celsius</p>
-      <p>Condition: {props.condition}</p>
-    </div>
-  );
-};
-
-const UserAvatar = (props) => {
-  return (
-    <div>
-      <h1>User Avatar</h1>
-      <img src={props.img} alt={props.alt} />
-    </div>
-  );
+const WelcomeMessage = (props) => {
+  return <h1>Welcome {props.name}!</h1>;
 };
 
 const App = () => {
   return (
     <div>
-      <Greeting name="John" />
-      <UserDetails name="Bob" age={20} country="India" />
-      <WeatherInfo temperature={29} condition="Sunny" />
-      <UserAvatar img="https://via.placeholder.com/150" alt="avatar" />
+      <WelcomeMessage name="Emily" />
     </div>
   );
 };

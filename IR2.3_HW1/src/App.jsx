@@ -61,7 +61,9 @@ const Articles = ({ articles }) => {
 };
 
 const Posts = ({ posts }) => {
-  const totalLikes = posts.reduce(
+  const filteredPosts = posts.filter((post) => post.user === "User1");
+
+  const totalLikes = filteredPosts.reduce(
     (acc, curr) => (curr.user === "User1" ? acc + curr.likes : acc),
     0
   );

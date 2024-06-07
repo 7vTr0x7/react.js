@@ -9,10 +9,10 @@ const BlogPosts = ({ blogPosts }) => {
     return acc;
   }, 0);
 
-  console.log(wordCount);
   return (
     <div>
-      <p>Word Count of Blog Posts: {wordCount}</p>
+      <h2>Word Count of Blog Posts</h2>
+      <p>{wordCount}</p>
     </div>
   );
 };
@@ -22,7 +22,22 @@ const Laptops = ({ laptops }) => {
 
   return (
     <div>
-      <p>Total Price of laptops: ${totalPrice} </p>
+      <h2>Total Price of laptops </h2>
+      <p>${totalPrice}</p>
+    </div>
+  );
+};
+
+const Cafes = ({ cafes }) => {
+  const filteredCafes = cafes.filter((cafe) => cafe.type === "cafe");
+
+  const totalRating = filteredCafes.reduce((acc, curr) => acc + curr.rating, 0);
+  const avgRating = totalRating / filteredCafes.length;
+
+  return (
+    <div>
+      <h2>Average Rating of Cafes</h2>
+      <p>{avgRating}</p>
     </div>
   );
 };
@@ -61,10 +76,23 @@ const App = () => {
     { id: 3, brand: "MacBook", price: 12999.99 },
   ];
 
+  const cafes = [
+    { id: 1, name: "Coffee House", rating: 4.5, type: "cafe" },
+
+    { id: 2, name: "Cafe Latte", rating: 4.2, type: "cafe" },
+
+    { id: 3, name: "Espresso Bar", rating: 4.8, type: "cafe" },
+
+    { id: 3, name: "Me and U", rating: 4.3, type: "restaurant" },
+  ];
+
   return (
     <div>
       <BlogPosts blogPosts={blogPosts} />
+      <hr />
       <Laptops laptops={laptops} />
+      <hr />
+      <Cafes cafes={cafes} />
     </div>
   );
 };

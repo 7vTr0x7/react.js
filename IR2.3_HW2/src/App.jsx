@@ -1,9 +1,15 @@
 const BlogPosts = ({ blogPosts }) => {
-  const wordCount = blogPosts.reduce(
-    (acc, curr) => curr.category === "Food" && acc + curr.content.length,
-    0
-  );
+  const wordCount = blogPosts.reduce((acc, curr) => {
+    const arr = [];
+    if (curr.category === "Food") {
+      arr.push(curr.content.split(" "));
+      acc += arr[0].length;
+    }
 
+    return acc;
+  }, 0);
+
+  console.log(wordCount);
   return (
     <div>
       <p>Word Count of Blog Posts: {wordCount}</p>

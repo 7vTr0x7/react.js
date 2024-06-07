@@ -1,5 +1,9 @@
 const ProductList = ({ products }) => {
-  const productListing = products.map((product) => (
+  const filteredProducts = products.filter(
+    (product) => product.price >= 20 && product.price <= 50
+  );
+
+  const productListing = filteredProducts.map((product) => (
     <div key={product.id}>
       <h2>Name: {product.name}</h2>
       <p>Price: {product.price}</p>
@@ -15,7 +19,11 @@ const ProductList = ({ products }) => {
 };
 
 const Restaurants = ({ restaurants }) => {
-  const restaurantListing = restaurants.map((res) => (
+  const filteredRestaurants = restaurants.filter(
+    (res) => res.cuisine === "Italian"
+  );
+
+  const restaurantListing = filteredRestaurants.map((res) => (
     <div key={res.id}>
       <h2>Name: {res.name}</h2>
       <p>Cuisine: {res.cuisine}</p>
@@ -31,7 +39,9 @@ const Restaurants = ({ restaurants }) => {
 };
 
 const Videos = ({ videos }) => {
-  const videoListing = videos.map((video) => (
+  const filteredVideos = videos.filter((video) => video.views > 1000);
+
+  const videoListing = filteredVideos.map((video) => (
     <div key={video.id}>
       <h2>Title: {video.title}</h2>
       <p>Views: {video.views}</p>

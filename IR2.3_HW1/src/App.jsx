@@ -45,10 +45,12 @@ const Tweets = ({ tweets }) => {
 };
 
 const Articles = ({ articles }) => {
-  const wordCount = articles.reduce(
-    (acc, curr) => acc + curr.content.length,
-    0
-  );
+  const wordCount = articles.reduce((acc, curr) => {
+    const arr = [];
+    arr.push(curr.content.split(" "));
+    acc += arr[0].length;
+    return acc;
+  }, 0);
 
   return (
     <div>

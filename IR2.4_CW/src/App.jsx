@@ -11,6 +11,32 @@ const Products = ({ products, productId }) => {
   );
 };
 
+const Restaurants = ({ restaurants, name }) => {
+  const restaurantData = restaurants.find(
+    (restaurant) => restaurant.name === name
+  );
+
+  return (
+    <div>
+      <h1>Restaurant Data</h1>
+      <p>Restaurant Name: {restaurantData.name}</p>
+      <p>Cuisine: {restaurantData.cuisine}</p>
+    </div>
+  );
+};
+
+const Video = ({ videos, title }) => {
+  const videoInfo = videos.find((video) => video.title === title);
+
+  return (
+    <div>
+      <h1>Video Info</h1>
+      <p>Title: {videoInfo.title}</p>
+      <p>Views: {videoInfo.views}</p>
+    </div>
+  );
+};
+
 const App = () => {
   const products = [
     { id: 1, name: "Product 1", price: 19.99 },
@@ -32,6 +58,10 @@ const App = () => {
   return (
     <div>
       <Products products={products} productId={2} />
+      <hr />
+      <Restaurants restaurants={restaurants} name="Restaurant 3" />
+      <hr />
+      <Video videos={videos} title="Video 1" />
     </div>
   );
 };

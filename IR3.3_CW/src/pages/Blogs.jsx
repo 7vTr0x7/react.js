@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -15,9 +16,12 @@ const Blogs = () => {
                   <h5>Blog 1</h5>
                   <p className="card-text">
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s
+                    typesetting industry. Lorem Ipsum has been the
+                    industry&apos;s standard dummy text ever since the 1500s
                   </p>
+                  <Link to="/blogs/1" className="btn btn-primary">
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -29,9 +33,12 @@ const Blogs = () => {
                   <h5>Blog 2</h5>
                   <p className="card-text">
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s
+                    typesetting industry. Lorem Ipsum has been the
+                    industry&apos;s standard dummy text ever since the 1500s
                   </p>
+                  <Link to="/blogs/2" className="btn btn-primary">
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -43,9 +50,12 @@ const Blogs = () => {
                   <h5>Blog 3</h5>
                   <p className="card-text">
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s
+                    typesetting industry. Lorem Ipsum has been the
+                    industry&apos;s standard dummy text ever since the 1500s
                   </p>
+                  <Link to="/blogs/3" className="btn btn-primary">
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>

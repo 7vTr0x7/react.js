@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const About = () => {
@@ -44,6 +45,7 @@ const About = () => {
           </p>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

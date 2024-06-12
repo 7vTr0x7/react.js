@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Stays = () => {
@@ -89,6 +90,7 @@ const Stays = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

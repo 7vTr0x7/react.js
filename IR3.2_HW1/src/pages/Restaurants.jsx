@@ -1,4 +1,4 @@
-import React from "react";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Restaurants = () => {
@@ -48,6 +48,7 @@ const Restaurants = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

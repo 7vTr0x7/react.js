@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const About = () => {
@@ -27,15 +28,17 @@ const About = () => {
           </p>
           <p>
             Beyond the delectable fare, our restaurant is a haven for connection
-            and community. Whether you're gathering with loved ones for a
+            and community. Whether you&apos;re gathering with loved ones for a
             special occasion, enjoying a romantic evening for two, or simply
             seeking a respite from the bustle of the city, our warm and
             welcoming atmosphere invites you to relax, indulge, and create
             cherished memories. Come join us on a journey of culinary discovery,
-            where every meal is an opportunity to savor life's simple pleasures.
+            where every meal is an opportunity to savor life&apos;s simple
+            pleasures.
           </p>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

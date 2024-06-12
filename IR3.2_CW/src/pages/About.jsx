@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const About = () => {
@@ -24,6 +25,7 @@ const About = () => {
           including versions of Lorem Ipsum.
         </p>
       </main>
+      <Footer />
     </>
   );
 };

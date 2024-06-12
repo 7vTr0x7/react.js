@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Blogs = () => {
@@ -51,6 +52,7 @@ const Blogs = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

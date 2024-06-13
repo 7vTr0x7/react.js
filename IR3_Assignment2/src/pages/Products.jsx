@@ -26,12 +26,25 @@ const Products = () => {
     </div>
   ));
 
+  const filteredProducts = products.filter((prod) => prod.price.slice(1) < 80);
+  console.log(filteredProducts);
+  const affordableProducts = filteredProducts.map((prod) => (
+    <div key={prod.id}>
+      <h3>{prod.name}</h3>
+      <p>{prod.description}</p>
+      <p>Price: {prod.price}</p>
+    </div>
+  ));
+
   return (
     <>
       <Header />
       <main className="container py-4">
         <h1 className="fs-1 fw-normal">Products</h1>
         <div>{productListing}</div>
+        <hr />
+        <h1 className="fs-1 fw-normal">Affordable Products</h1>
+        <div>{affordableProducts}</div>
       </main>
       <Footer />
     </>

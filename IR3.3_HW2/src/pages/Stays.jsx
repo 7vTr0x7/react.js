@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -18,13 +19,16 @@ const Stays = () => {
                 />
               </div>
               <div className="col-md-8 py-3">
-                <h4>Luxurious Taj Mahal View Apartment</h4>
+                <h4>Cozy Cottage Retreat</h4>
                 <p>
                   Wake up to a breathtaking view of the Taj Mahal from this
                   luxurious apartment. Explore the rich history and beauty of
                   this iconic monument right from your window.
                 </p>
-                <p>Last updated 3 mins ago</p>{" "}
+                <p>Last updated 3 mins ago</p>
+                <Link to="/stays/1" className="btn btn-primary">
+                  View More
+                </Link>
               </div>
             </div>
           </div>
@@ -38,13 +42,16 @@ const Stays = () => {
                 />
               </div>
               <div className="col-md-8 py-3">
-                <h4>Cozy Retreat in the Mountains</h4>
+                <h4>Urban Apartment</h4>
                 <p>
                   Escape to nature with this cozy mountain retreat. Enjoy
                   tranquility and stunning views while being surrounded by lush
                   forests and fresh mountain air.
                 </p>
                 <p>Last updated 10 mins ago</p>
+                <Link to="/stays/2" className="btn btn-primary">
+                  View More
+                </Link>
               </div>
             </div>
           </div>
@@ -58,13 +65,16 @@ const Stays = () => {
                 />
               </div>
               <div className="col-md-8 py-3">
-                <h4>Seaside Villa with Private Beach Access</h4>
+                <h4>Beachfront Villa</h4>
                 <p>
                   Indulge in luxury with this stunning seaside villa. Relax on
                   pristine beaches, take a dip in the private pool, and soak up
                   the sun in this exclusive coastal retreat
                 </p>
                 <p>Last updated 16 mins ago</p>
+                <Link to="/stays/3" className="btn btn-primary">
+                  View More
+                </Link>
               </div>
             </div>
           </div>
@@ -78,13 +88,16 @@ const Stays = () => {
                 />
               </div>
               <div className="col-md-8 py-3">
-                <h4> Modern Loft in the City Center</h4>
+                <h4>Rustic Cabin</h4>
                 <p>
                   Experience urban living at its finest with this modern loft.
                   Conveniently located in the city center, it offers style,
                   comfort, and easy access to dining and entertainment options.
                 </p>
                 <p>Last updated 20 mins ago</p>
+                <Link to="/stays/4" className="btn btn-primary">
+                  View More
+                </Link>
               </div>
             </div>
           </div>

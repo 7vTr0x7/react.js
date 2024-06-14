@@ -1,3 +1,4 @@
+import Font from "./components/Font";
 import Password from "./components/Password";
 import Tabs from "./components/Tabs";
 import Text from "./components/Text";
@@ -13,6 +14,8 @@ const App = () => {
       <Text />
       <hr />
       <Tabs />
+      <hr />
+      <Font />
     </main>
   );
 };

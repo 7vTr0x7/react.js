@@ -1,9 +1,17 @@
-import React from 'react'
+import Password from "./components/Password";
+import Text from "./components/Text";
+import Theme from "./components/Theme";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <main>
+      <Theme />
+      <hr />
+      <Password />
+      <hr />
+      <Text />
+    </main>
+  );
+};
 
-export default App
+export default App;

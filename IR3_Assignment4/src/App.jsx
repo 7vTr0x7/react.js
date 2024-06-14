@@ -14,13 +14,13 @@ const App = () => {
             className="img-Fluid"
             src="https://via.placeholder.com/500x350"
           />
-          <div className="py-4">
+          <div className="py-3">
             <h2>Todos</h2>
             <p>Welcome to Todo application</p>
             <p>
-              {/* <Link to="/todos" className="btn btn-primary">
+              <Link to="/todos" className="btn btn-primary">
                 View todos
-              </Link> */}
+              </Link>
             </p>
           </div>
         </div>

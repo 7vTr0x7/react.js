@@ -1,7 +1,17 @@
-import React from "react";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const Todos = () => {
-  return <div>Todos</div>;
+  return (
+    <>
+      <Header />
+      <main className="container py-4">
+        <h1>Todo List</h1>
+      </main>
+      ;
+      <Footer />
+    </>
+  );
 };
 
 export default Todos;

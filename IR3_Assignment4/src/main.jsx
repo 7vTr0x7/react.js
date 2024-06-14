@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./pages/About.jsx";
 import Todos from "./pages/Todos.jsx";
+import TodoDetails from "./pages/TodoDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/todos",
     element: <Todos />,
+  },
+  {
+    path: "/todos/:todoId",
+    element: <TodoDetails />,
   },
 ]);
 

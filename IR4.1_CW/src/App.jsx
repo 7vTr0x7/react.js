@@ -1,4 +1,5 @@
 import Password from "./components/Password";
+import Tabs from "./components/Tabs";
 import Text from "./components/Text";
 import Theme from "./components/Theme";
 
@@ -10,6 +11,8 @@ const App = () => {
       <Password />
       <hr />
       <Text />
+      <hr />
+      <Tabs />
     </main>
   );
 };

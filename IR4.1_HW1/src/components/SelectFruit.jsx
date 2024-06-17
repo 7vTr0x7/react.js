@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const SelectFruit = () => {
   const fruits = ["Apple", "Banana", "Orange", "Mango", "Grapes"];
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(undefined);
 
   const fruitListing = fruits.map((fruit, indx) => (
     <li
@@ -19,7 +19,9 @@ const SelectFruit = () => {
     <div>
       <h2>Select a Fruit</h2>
       <ul>{fruitListing}</ul>
-      <p>You Selected: {selectedFruit}</p>
+      <p style={selectedFruit ? { display: "block" } : { display: "none" }}>
+        You Selected: {selectedFruit}
+      </p>
     </div>
   );
 };

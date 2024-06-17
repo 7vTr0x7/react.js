@@ -1,3 +1,4 @@
+import HideMsg from "./components/HideMsg";
 import IncDec from "./components/IncDec";
 import ToggleBgColor from "./components/ToggleBgColor";
 
@@ -7,6 +8,9 @@ const App = () => {
       <IncDec />
       <hr />
       <ToggleBgColor />
+      <hr />
+      <HideMsg />
+      <hr />
     </div>
   );
 };

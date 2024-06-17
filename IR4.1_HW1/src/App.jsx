@@ -1,5 +1,12 @@
+import IncDec from "./components/IncDec";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <IncDec />
+      <hr />
+    </div>
+  );
 };
 
 export default App;

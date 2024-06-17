@@ -5,7 +5,9 @@ const HideMsg = () => {
 
   return (
     <div>
-      <button onClick={() => setIsVisible(!isVisible)}>Hide Message</button>
+      <button onClick={() => setIsVisible(!isVisible)}>
+        {isVisible ? "Hide Message" : "Show Message"}
+      </button>
       <p style={isVisible ? { display: "block" } : { display: "none" }}>
         This is a toggleable message!
       </p>

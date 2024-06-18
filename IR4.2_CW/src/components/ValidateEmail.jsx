@@ -20,7 +20,7 @@ const ValidateEmail = () => {
 
   return (
     <div>
-      <label>Enter Email: </label>
+      <label>Enter an Email: </label>
       <input id="email" onChange={emailHandler} />
       <button onClick={clickHandler}>Validate Email</button>
     </div>

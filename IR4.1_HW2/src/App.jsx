@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import ImageSelect from "./components/ImageSelect";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <ImageSelect />
+    </div>
+  );
+};
 
-export default App
+export default App;

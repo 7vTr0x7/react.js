@@ -1,5 +1,6 @@
 import CalculateAge from "./components/CalculateAge";
 import CheckPassword from "./components/CheckPassword";
+import DisplayColor from "./components/DisplayColor";
 import ValidateNumber from "./components/ValidateNumber";
 
 const App = () => {
@@ -10,6 +11,8 @@ const App = () => {
       <CheckPassword />
       <br />
       <CalculateAge />
+      <br />
+      <DisplayColor />
     </div>
   );
 };

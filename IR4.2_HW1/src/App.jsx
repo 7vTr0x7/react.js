@@ -1,3 +1,4 @@
+import CalculateAge from "./components/CalculateAge";
 import CheckPassword from "./components/CheckPassword";
 import ValidateNumber from "./components/ValidateNumber";
 
@@ -7,6 +8,8 @@ const App = () => {
       <ValidateNumber />
       <br />
       <CheckPassword />
+      <br />
+      <CalculateAge />
     </div>
   );
 };

@@ -1,7 +1,12 @@
 import React from "react";
+import ValidateZipcode from "./components/ValidateZipcode";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <ValidateZipcode />
+    </div>
+  );
 };
 
 export default App;

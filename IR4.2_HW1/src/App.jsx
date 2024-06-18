@@ -1,7 +1,11 @@
-import React from "react";
+import ValidateNumber from "./components/ValidateNumber";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <ValidateNumber />
+    </div>
+  );
 };
 
 export default App;

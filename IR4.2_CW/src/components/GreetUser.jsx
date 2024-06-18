@@ -11,7 +11,7 @@ const GreetUser = () => {
     <div>
       <label>Enter Your Name: </label>
       <input id="userName" type="text" onChange={inputHandler} />
-      {userName && <p>Hello, {userName}</p>}
+      {userName && <p>Hello, {userName}!</p>}
     </div>
   );
 };

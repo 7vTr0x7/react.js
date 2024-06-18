@@ -1,7 +1,11 @@
-import React from "react";
+import GreetUser from "./components/GreetUser";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <GreetUser />
+    </div>
+  );
 };
 
 export default App;

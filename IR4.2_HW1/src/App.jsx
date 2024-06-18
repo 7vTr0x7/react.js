@@ -1,6 +1,7 @@
 import CalculateAge from "./components/CalculateAge";
 import CheckPassword from "./components/CheckPassword";
 import DisplayColor from "./components/DisplayColor";
+import SearchQuery from "./components/SearchQuery";
 import ValidateNumber from "./components/ValidateNumber";
 
 const App = () => {
@@ -13,6 +14,8 @@ const App = () => {
       <CalculateAge />
       <br />
       <DisplayColor />
+      <br />
+      <SearchQuery />
     </div>
   );
 };

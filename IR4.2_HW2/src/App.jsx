@@ -1,6 +1,6 @@
-import React from "react";
 import ValidateZipcode from "./components/ValidateZipcode";
 import CapitalizeName from "./components/CapitalizeName";
+import SearchTerm from "./components/SearchTerm";
 
 const App = () => {
   return (
@@ -8,6 +8,9 @@ const App = () => {
       <ValidateZipcode />
       <br />
       <CapitalizeName />
+      <br />
+
+      <SearchTerm />
     </div>
   );
 };

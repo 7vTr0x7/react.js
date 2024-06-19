@@ -1,3 +1,4 @@
+import Comment from "./components/Comment";
 import Feedback from "./components/Feedback";
 import Message from "./components/Message";
 import MovieReview from "./components/MovieReview";
@@ -16,6 +17,8 @@ const App = () => {
       <Notes />
       <br />
       <Question />
+      <br />
+      <Comment />
     </div>
   );
 };

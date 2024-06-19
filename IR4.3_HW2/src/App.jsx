@@ -1,3 +1,4 @@
+import Recipe from "./components/Recipe";
 import Survey from "./components/Survey";
 
 const App = () => {
@@ -5,6 +6,8 @@ const App = () => {
     <div>
       <h1>Text Area Program</h1>
       <Survey />
+      <br />
+      <Recipe />
     </div>
   );
 };

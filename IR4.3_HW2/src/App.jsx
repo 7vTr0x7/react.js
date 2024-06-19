@@ -1,5 +1,6 @@
 import DiaryEntry from "./components/DiaryEntry";
 import Recipe from "./components/Recipe";
+import ShareStory from "./components/ShareStory";
 import Survey from "./components/Survey";
 
 const App = () => {
@@ -11,6 +12,8 @@ const App = () => {
       <Recipe />
       <br />
       <DiaryEntry />
+      <br />
+      <ShareStory />
     </div>
   );
 };

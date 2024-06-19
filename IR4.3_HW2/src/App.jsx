@@ -1,7 +1,12 @@
-import React from "react";
+import Survey from "./components/Survey";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <h1>Text Area Program</h1>
+      <Survey />
+    </div>
+  );
 };
 
 export default App;

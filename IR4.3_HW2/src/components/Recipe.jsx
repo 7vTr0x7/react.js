@@ -5,7 +5,7 @@ const Recipe = () => {
   const [list, setList] = useState();
 
   const clickHandler = () => {
-    const splitRecipe = recipe.split(", ");
+    const splitRecipe = recipe.split(". ");
 
     const recipeListing = splitRecipe.map((recipe, indx) => (
       <li key={indx}>{recipe}</li>

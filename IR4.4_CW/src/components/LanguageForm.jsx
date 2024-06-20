@@ -33,7 +33,7 @@ const LanguageForm = () => {
         onChange={handleLanguageCheckbox}
       />{" "}
       Python
-      <p>Selected Language: {selectedLang.join(", ")}</p>
+      <p>Selected Languages: {selectedLang.join(", ")}</p>
     </div>
   );
 };
